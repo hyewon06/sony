@@ -56,3 +56,81 @@ a {
     background-color: #fff;
     background-image: url(../img/arrow-botton-white.svg);
 }
+
+/* 프터 */
+#footer {
+    height: 320px;
+    background: #000;
+
+    padding: 108px 0;
+    margin-top: 160px;
+
+    overflow: hidden;
+}
+.foot-con {
+    display: flex;
+    justify-content: space-between;
+
+    background: #000;
+}
+.foot-logo h1 {
+    width: 140px;
+    height: 23px;
+    background: url(../img/logo.svg) no-repeat 0 0 / contain;
+}
+.foot-middle {
+    margin-left: -30%;
+}
+.foot-middle dl {
+    display: flex;
+    gap: 7px;
+
+    align-items: center;
+}
+.foot-middle dl dt {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.foot-middle dl dd {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--white40);
+}
+.foot-list {
+    display: flex;
+    gap: 11px;
+}
+.foot-middle p {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--white40);
+}
+
+.sns-list {
+    display: flex;
+    gap: 13px;
+
+    text-align: center;
+}
+.sns-list li {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--white60);
+    border-radius: 50%;
+}
+.sns-list li:nth-child(1) {
+    font-size: 26px;
+    color: var(--white60);
+    padding: 1px;
+}
+.sns-list li:nth-child(2) {
+    font-size: 26px;
+    color: var(--white60);
+    padding: 1px;
+}
+.sns-list li:nth-child(3) {
+    font-size: 26px;
+    color: var(--white60);
+    padding: 1px;
+}

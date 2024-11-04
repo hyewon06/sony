@@ -29,6 +29,13 @@ $(function () {
     $(".list-title").on("click", function () {
         $(this).next(".list-con").slideToggle();
     });
+    $(".sort-list-title").on("click", function () {
+        $(this).next(".list-con").slideToggle();
+    });
+
+    $(".item-list").on("click", function () {
+        $(this).next(".list-con").slideToggle();
+    });
 
     // 탑버튼
     const btnTop = $(".btn-top");
