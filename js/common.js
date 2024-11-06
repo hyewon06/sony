@@ -7,11 +7,25 @@ $(function () {
 
     $menu.on("mouseenter", function () {
         $header.addClass("active");
-        $(this).find($subMenu).stop().slideDown(duration);
+        // $(this).find($subMenu).stop().slideDown(duration);
+        $subMenu.stop().fadeIn(duration);
     });
     $menu.on("mouseleave", function () {
         $header.removeClass("active");
-        $(this).find($subMenu).stop().slideUp(duration);
+        $subMenu.stop().fadeOut(duration);
+    });
+
+    // SONY PICK
+    const pickSlider = new Swiper(".pick-slider", {
+        loop: true,
+        autoplay: true,
+        slidesPerView: "auto",
+        spaceBetween: 45,
+
+        navigation: {
+            nextEl: ".pick-slider-wrap .button-next",
+            prevEl: ".pick-slider-wrap .button-prev",
+        },
     });
 
     const newsSlider = new Swiper(".news-slider", {
