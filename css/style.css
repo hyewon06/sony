@@ -149,6 +149,8 @@ main {
 
 .visual-title {
     color: var(--title-color);
+    display: flex;
+    flex-direction: column-reverse;
 }
 .visual-title h2 {
     font-size: 230px;
@@ -176,6 +178,10 @@ main {
 .visual-con {
     color: var(--title-color);
     text-align: center;
+
+    position: relative;
+
+    padding: 480px;
 }
 .visual-con p {
     font-weight: 500;
@@ -192,7 +198,7 @@ main {
     background: var(--title-color);
 
     position: absolute;
-    top: 150%;
+    top: 20%;
     left: 50%;
 }
 .visual-con::after {
@@ -202,7 +208,7 @@ main {
     background: var(--title-color);
 
     position: absolute;
-    top: -210%;
+    top: 63%;
     left: 50%;
 }
 
@@ -456,7 +462,7 @@ main {
     height: 268px;
     background: url(../img/banner-pic.png) no-repeat 0 0 / cover;
     padding: 95px 0;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 .banner h4 {
     font-weight: 600;
@@ -468,8 +474,8 @@ main {
     font-size: 22px;
     color: var(--title-color);
 }
-.banner:hover .banner-con {
-    scale: 110%;
+.banner-con:hover {
+    scale: 105%;
 }
 /* 뉴스 섹션 */
 .news {
