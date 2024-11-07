@@ -1,0 +1,175 @@
+@charset 'utf-8';
+
+.inner {
+    width: 1720px;
+    /* width: 89.5833%; */
+    height: 100%;
+    margin: 0 auto;
+    /* background: #f5f; */
+}
+
+.top-banner-con {
+    height: 45px;
+    background: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-banner-con p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+
+    padding: 0 200px;
+}
+.top-banner-con .ri-close-line {
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+#header nav {
+    display: flex;
+    height: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+}
+#header nav .logo a {
+    display: block;
+    width: 149px;
+    height: 26px;
+    background: url(../img/logo-dark.svg) no-repeat 0 0 / contain;
+}
+#header nav .gnb-list {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    font-weight: 600;
+    font-size: 23px;
+    color: var(--title-dark-color);
+}
+.util-menu {
+    gap: 21px;
+
+    display: flex;
+    flex-direction: row;
+}
+.util-menu a {
+    color: var(--title-dark-color);
+    font-size: 35px;
+}
+#header nav .gnb-list a:hover {
+    color: var(--main-color);
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    transition: 0.3s;
+}
+
+#header.active::after {
+    height: 300px;
+}
+
+.gnb-list > li {
+    position: relative;
+    /* border: 1px solid #0f0; */
+}
+
+.gnb-list > li > a {
+    display: block;
+    padding: 25px;
+
+    text-align: center;
+    color: #000;
+}
+
+/* main */
+.visual {
+    position: absolute;
+    top: 145px;
+    left: 0;
+}
+.main-banner {
+    position: relative;
+}
+.banner-con {
+    position: absolute;
+    top: 35%;
+    left: 100px;
+}
+.banner-con h2 {
+    font-weight: 700;
+    font-size: 90px;
+    color: #fff;
+}
+.banner-con p {
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+}
+
+.categorise-list {
+    display: flex;
+
+    padding-top: 950px;
+
+    justify-content: space-between;
+}
+.categorise-list li {
+    width: 268px;
+    height: 268px;
+    background: #e1e1e1;
+    border-radius: 50%;
+
+    position: relative;
+}
+.categorise-list li p {
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 0%;
+
+    transform: scale(0.5);
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.categorise-list li:hover p {
+    transform: scale(1);
+    opacity: 1;
+}
