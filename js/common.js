@@ -110,4 +110,31 @@ $(function () {
         e.preventDefault();
         $(".top-banner").slideUp();
     });
+
+    // 스토리 애니메이션
+    gsap.registerPlugin(ScrollTrigger);
+
+    const keywords = document.querySelectorAll(".keywords > div");
+    const keywordsCon = document.querySelectorAll(".keywords-con > p");
+    const keywordsPics = gsap.utils.toArray(".keywords-pic figure");
+
+    keywordsPics.forEach((pic, index) => {
+        gsap.to(pic, {
+            scrollTrigger: {
+                trigger: pic,
+                markers: true,
+                start: "top 90%",
+                end: "bottom 20%",
+                scrub: 1,
+
+                toggleClass: {
+                    targets: [keywords[index], keywordsCon[index]],
+                    className: "active",
+                },
+            },
+            clipPath: "inset(0 0%)",
+            // y: 100,
+            // autoAlpha: 0,
+        });
+    });
 });
