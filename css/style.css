@@ -236,7 +236,7 @@ main {
     background: #f55;
 }
 .story-con figure {
-    display: none;
+    /* display: none; */
 }
 
 .keywords-con {
@@ -257,7 +257,7 @@ main {
     top: 22%;
     left: 0;
 
-    opacity: 0;
+    /* opacity: 0; */
 }
 .keyword_2::after {
     content: "";
@@ -269,7 +269,7 @@ main {
     top: 48%;
     left: 0;
 
-    opacity: 0;
+    /* opacity: 0; */
 }
 .keyword_3::after {
     content: "";
@@ -281,7 +281,7 @@ main {
     top: 72%;
     left: 0;
 
-    opacity: 0;
+    /* opacity: 0; */
 }
 .keyword_4::after {
     content: "";
@@ -293,16 +293,16 @@ main {
     top: 98%;
     left: 0;
 
-    opacity: 0;
+    /* opacity: 0; */
 }
 .con_2 {
-    display: none;
+    /* display: none; */
 }
 .con_3 {
-    display: none;
+    /* display: none; */
 }
 .con_4 {
-    display: none;
+    /* display: none; */
 }
 
 /* 픽 섹션 */

@@ -54,11 +54,16 @@ $(function () {
         },
     });
     // SERVICE
-    const swiperSlider = new Swiper(".swiper", {
+    const serviceSlider = new Swiper(".service-slider", {
         loop: true,
         autoplay: true,
         slidesPerView: 1,
-        spaceBetween: 40,
+        // spaceBetween: 40,
+
+        navigation: {
+            nextEl: ".service-slider .next",
+            prevEl: ".service-slider .prev",
+        },
     });
     // MAIN
     const mainSlider = new Swiper(".main", {
@@ -98,5 +103,11 @@ $(function () {
     btnTop.on("click", function (e) {
         e.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, 500);
+    });
+
+    // top banner
+    $(".top-banner a").on("click", function (e) {
+        e.preventDefault();
+        $(".top-banner").slideUp();
     });
 });
