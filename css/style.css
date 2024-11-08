@@ -216,93 +216,54 @@ main {
 .story {
     background: #fff;
 }
+.story-con {
+    background: #ccc;
+    padding: 200px 0;
+}
+
+.story-con .inner {
+    height: calc(100vh - 300px);
+    border: 5px solid #00f;
+    position: sticky;
+    top: 200px;
+    z-index: 10;
+    /* display: none; */
+}
 .keywords {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: tomato;
+}
+
+.keywords * {
     font-weight: 600;
     font-size: 56px;
     color: var(--white40);
-    /* position: sticky;
-    top: 100px;
-    left: 100px; */
-}
-.story-con {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-content: space-between;
-
-    padding: 190px 0;
-    background: #f55;
-}
-.story-con figure {
-    /* display: none; */
 }
 
 .keywords-con {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 120px;
+    background: skyblue;
+}
+
+.keywords-con p {
     font-weight: 600;
     font-size: 40px;
     color: #fff;
 
-    margin-left: 50%;
-}
-/* after */
-.keyword_1::after {
-    content: "";
-    width: 318px;
-    height: 3px;
-    background: var(--title-color);
-
     position: absolute;
-    top: 22%;
+    bottom: 0;
     left: 0;
-
-    /* opacity: 0; */
 }
-.keyword_2::after {
-    content: "";
-    width: 194px;
-    height: 3px;
-    background: var(--title-color);
 
-    position: absolute;
-    top: 48%;
-    left: 0;
-
-    /* opacity: 0; */
-}
-.keyword_3::after {
-    content: "";
-    width: 124px;
-    height: 3px;
-    background: var(--title-color);
-
-    position: absolute;
-    top: 72%;
-    left: 0;
-
-    /* opacity: 0; */
-}
-.keyword_4::after {
-    content: "";
-    width: 146px;
-    height: 3px;
-    background: var(--title-color);
-
-    position: absolute;
-    top: 98%;
-    left: 0;
-
-    /* opacity: 0; */
-}
-.con_2 {
-    /* display: none; */
-}
-.con_3 {
-    /* display: none; */
-}
-.con_4 {
-    /* display: none; */
+.keywords-pic figure {
+    margin: 50vh auto;
+    clip-path: inset(0 80%);
 }
 
 /* 픽 섹션 */
