@@ -40,6 +40,34 @@ $(function () {
         },
     });
 
+    // PROMOTION
+    const promoSlider = new Swiper(".promo", {
+        loop: true,
+        // autoplay: true,
+        slidesPerView: 1.5,
+        spaceBetween: 40,
+        centeredSlides: true,
+
+        navigation: {
+            nextEl: ".news-slider-wrap .button-next",
+            prevEl: ".news-slider-wrap .button-prev",
+        },
+    });
+    // SERVICE
+    const swiperSlider = new Swiper(".swiper", {
+        loop: true,
+        autoplay: true,
+        slidesPerView: 1,
+        spaceBetween: 40,
+    });
+    // MAIN
+    const mainSlider = new Swiper(".main", {
+        loop: true,
+        autoplay: true,
+        slidesPerView: 1,
+        spaceBetween: 40,
+    });
+
     $(".list-title").on("click", function () {
         $(this).next(".list-con").slideToggle();
     });
