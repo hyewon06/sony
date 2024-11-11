@@ -119,22 +119,30 @@ $(function () {
     const keywordsPics = gsap.utils.toArray(".keywords-pic figure");
 
     keywordsPics.forEach((pic, index) => {
-        gsap.to(pic, {
+        gsap.timeline({
             scrollTrigger: {
                 trigger: pic,
-                markers: true,
-                start: "top 90%",
-                end: "bottom 20%",
+                // markers: true,
+                start: "top 30%",
+                end: "bottom 0%",
                 scrub: 1,
+                // pin: true,
 
                 toggleClass: {
                     targets: [keywords[index], keywordsCon[index]],
                     className: "active",
                 },
             },
-            clipPath: "inset(0 0%)",
-            // y: 100,
-            // autoAlpha: 0,
-        });
+        })
+            .from(pic, {
+                // autoAlpha: 0,
+                // y: 100,
+                // clipPath: "inset(20% 10%)",
+                borderRadius: 60,
+                width: "80%",
+                height: "80%",
+                duration: 5,
+            })
+            .to(".fake", { x: 1, duration: 20 });
     });
 });

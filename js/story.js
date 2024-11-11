@@ -28,7 +28,7 @@ $(function () {
     const visionTL = gsap.timeline({
         scrollTrigger: {
             trigger: ".vision",
-            markers: true,
+            // markers: true,
             start: "top 30%",
             end: "bottom 0%",
 
@@ -42,23 +42,28 @@ $(function () {
     });
     visionTL.from(".figure figure", {
         autoAlpha: 0,
-        x: -30,
+
+        clipPath: "inset(0 100% 0 0",
     });
 
     //message
-    const ceoMessageTL = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".ceo-message",
-            markers: true,
-            start: "top 90%",
-            end: "bottom 20%",
+    const ceoMessageTL = gsap.timeline(
+        {
+            scrollTrigger: {
+                trigger: ".ceo-message",
+                markers: true,
+                start: "top 40%",
+                end: "bottom 20%",
 
-            scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
+                scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
+            },
         },
-    });
+        ">"
+    );
 
     ceoMessageTL.from(".message h2 ", {
         autoAlpha: 0,
         x: -50,
+        duration: 1,
     });
 });

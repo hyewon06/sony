@@ -217,13 +217,13 @@ main {
     background: #fff;
 }
 .story-con {
-    background: #ccc;
+    background: #000;
     padding: 200px 0;
 }
 
 .story-con .inner {
     height: calc(100vh - 300px);
-    border: 5px solid #00f;
+    /* border: 5px solid #00f; */
     position: sticky;
     top: 200px;
     z-index: 10;
@@ -233,63 +233,83 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background: tomato;
+    /* background: tomato; */
 }
 
-.keywords * {
-    font-weight: 600;
-    font-size: 56px;
-    color: var(--white40);
-}
-.keywords strong {
+.keywords > div {
+    /* border: 1px solid #000; */
     position: relative;
 }
-.keywords strong::after {
+
+.keywords > div * {
+    font-weight: 600;
+    font-size: 56px;
+    color: #fff;
+    opacity: 0.4;
+    transition: 0.4s;
+}
+.keywords > div::after {
     content: "";
-    width: 30%;
-    height: 2px;
-    background: #fff;
-
-    opacity: 0;
-
     position: absolute;
-    top: 70px;
-    left: 24px;
-}
-.keywords strong:active::after {
-    opacity: 1;
-    transform: scale(2);
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    transition: 0.4s;
 }
 
-.keywords-con p:active {
+/* active */
+.keywords > div.active::after {
+    width: 100%;
+}
+.keywords > div.active * {
     opacity: 1;
 }
+
+.keywords-con p.active {
+    opacity: 1;
+}
+
 .keywords-con {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 50%;
     height: 120px;
-    background: skyblue;
+    /* background: skyblue; */
 }
 
 .keywords-con p {
     font-weight: 600;
     font-size: 40px;
     color: #fff;
+    opacity: 0;
+    transition: 0.4s;
 
     position: absolute;
     bottom: 0;
     left: 0;
-
-    opacity: 0;
 }
 
 .keywords-pic figure {
-    margin: 50vh auto;
-    clip-path: inset(0 80%);
+    /* clip-path: inset(0% 0%); */
+    overflow: hidden;
+    border-radius: 0;
+    margin: 0 auto;
+    position: relative;
+    aspect-ratio: 16/9;
+    margin: 100px auto;
 }
 
+.keywords-pic figure img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    aspect-ratio: 16/9;
+}
 /* 픽 섹션 */
 .pick {
     padding: 230px 0;

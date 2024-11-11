@@ -22,6 +22,7 @@ $(function () {
         autoAlpha: 0,
         x: 50,
         stagger: 0.2,
+        duration: 2,
     });
 
     //news
@@ -39,7 +40,6 @@ $(function () {
     newsTL.from(".swiper-wrapper a", {
         autoAlpha: 0,
         y: 50,
-
         stagger: 0.25,
     });
 
