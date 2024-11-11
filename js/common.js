@@ -137,4 +137,13 @@ $(function () {
             // autoAlpha: 0,
         });
     });
+    const tl = gsap.timeline();
+    //header
+    tl.from(".logo", { y: -100, autoAlpha: 0 });
+    tl.from(".gnb li > a", { y: -100, autoAlpha: 0, stagger: 0.15 }, "-=0.4");
+    tl.from(".util-menu a", { y: -100, autoAlpha: 0, stagger: 0.35 }, "-=0.4");
+
+    // PICK
+    tl.from(".pick-title > h2", { y: 100, autoAlpha: 0 });
+    tl.from(".pick-title > p", { y: 100, autoAlpha: 0 }, "-=0.4");
 });
