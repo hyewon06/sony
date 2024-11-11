@@ -10,16 +10,16 @@ $(function () {
     tl.from(".vision-con h2", { autoAlpha: 0, duration: 1 });
     tl.from(".vision-con figure", { x: -50, autoAlpha: 0, stagger: 0.15 }, "-=0.4");
     tl.from(".message h2", { x: -50, autoAlpha: 0, duration: 1 });
-    tl.from(".messsage-con p", {
-        y: -50,
-        autoAlpha: 0,
-        stagger: 1,
-        duration: 1,
-    });
-    tl.from(".messsage-con strong", {
-        y: -50,
-        autoAlpha: 0,
-        stagger: 1,
-        duration: 1,
-    });
+    // tl.from(".messsage-con p", {
+    //     y: -50,
+    //     autoAlpha: 0,
+    //     stagger: 1,
+    //     duration: 1,
+    // });
+    // tl.from(".messsage-con strong", {
+    //     y: -50,
+    //     autoAlpha: 0,
+    //     stagger: 1,
+    //     duration: 1,
+    // });
 });
