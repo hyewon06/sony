@@ -3,25 +3,44 @@ $(function () {
 
     tl.from(".main-banner", { autoAlpha: 0 });
     //visual
-    tl.from(".categorise-list li", { y: 30, autoAlpha: 0, stagger: 0.25 }, ">");
+    // tl.from(".categorise-list li", { y: 30, autoAlpha: 0, stagger: 0.25 }, ">");
 
     // tl.from(".hot-products li", { y: 30, autoAlpha: 0, stagger: 0.1 });
     // tl.from(".promotion-info", { y: 30, autoAlpha: 0, stagger: 0.1 });
     tl.from(".service-list li", { y: 30, autoAlpha: 0, stagger: 0.25 }, ">");
 
+    const categoriseTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".categorise-list",
+            // markers: true,
+            start: "top 40%",
+            end: "bottom 30%",
+            // pin: true,
+
+            scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
+        },
+    });
+
+    categoriseTL.from(".categorise-list li ", {
+        y: 30,
+        autoAlpha: 0,
+        stagger: 0.1,
+    });
+
     const productTL = gsap.timeline({
         scrollTrigger: {
-            trigger: ".product",
-            markers: true,
-            start: "top 80%",
-            end: "bottom 20%",
+            trigger: ".hot-products",
+            // markers: true,
+            start: "top 70%",
+            end: "bottom 50%",
+            // pin: true,
 
             scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
         },
     });
 
     productTL.from(".hot-products li ", {
-        y: 70,
+        y: 30,
         autoAlpha: 0,
         stagger: 0.1,
     });
@@ -29,23 +48,24 @@ $(function () {
     const promotionTL = gsap.timeline({
         scrollTrigger: {
             trigger: ".promotion",
-            markers: true,
-            start: "top 80%",
-            end: "bottom 20%",
+            // markers: true,
+            start: "top 50%",
+            end: "bottom 0%",
+            // pin: true,
 
             scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
         },
     });
 
     promotionTL.from(".promotion-info ", {
-        y: 70,
+        y: 50,
         autoAlpha: 0,
     });
 
     const mapTL = gsap.timeline({
         scrollTrigger: {
             trigger: ".map",
-            markers: true,
+            // markers: true,
             start: "top 80%",
             end: "bottom 20%",
 
@@ -62,7 +82,7 @@ $(function () {
         scrollTrigger: {
             trigger: ".service",
             markers: true,
-            start: "top 80%",
+            start: "top 50%",
             end: "bottom 20%",
 
             scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
