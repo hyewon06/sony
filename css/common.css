@@ -59,12 +59,8 @@ a {
 
 /* 프터 */
 #footer {
-    height: 320px;
     background: #000;
-
     padding: 108px 0;
-    margin-top: 160px;
-
     overflow: hidden;
 }
 .foot-con {

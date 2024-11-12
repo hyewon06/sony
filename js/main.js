@@ -33,6 +33,7 @@ $(function () {
             start: "top 10%",
             end: "bottom 0%",
             pin: true,
+            anticipatePin: 1,
             scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
         },
     });
@@ -50,7 +51,7 @@ $(function () {
             // markers: true,
             start: "top 10%",
             end: "bottom 0%",
-            pin: true,
+            // pin: true,
             scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
         },
     });

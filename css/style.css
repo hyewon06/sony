@@ -628,8 +628,9 @@ main {
 
 /* 슬라이드 되는 텍스트 */
 .slide-text {
-    margin-bottom: 30px;
+    background: #fff;
     display: flex;
+    padding-bottom: 10rem;
 }
 
 .slide-text p {
