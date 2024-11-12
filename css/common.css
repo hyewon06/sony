@@ -5,7 +5,7 @@
 :root {
     --main-color: #6366f7;
     --title-color: #fff;
-    --title-dark-color: #000;
+    --title-dark-color: #121212;
     --white40: rgba(255, 255, 255, 0.4);
     --white60: rgba(255, 255, 255, 0.6);
     --black40: rgba(0, 0, 0, 0.4);
@@ -43,7 +43,7 @@ hr,
 .btn-top {
     width: 60px;
     height: 60px;
-    background: #000 url(../img/arrow-botton.svg) no-repeat 50%;
+    background: #121212 url(../img/arrow-botton.svg) no-repeat 50%;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
         rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 
@@ -60,7 +60,7 @@ hr,
 
 /* 프터 */
 #footer {
-    background: #000;
+    background: #121212;
     padding: 108px 0;
     overflow: hidden;
 }
@@ -68,7 +68,7 @@ hr,
     display: flex;
     justify-content: space-between;
 
-    background: #000;
+    background: #121212;
 }
 .foot-logo h1 {
     width: 140px;
