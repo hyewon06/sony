@@ -312,9 +312,6 @@ main {
     aspect-ratio: 16/9;
 }
 
-.pin-spacer {
-    background: rgba(255, 0, 0, 0.2);
-}
 /* 픽 섹션 */
 .pick {
     padding: 230px 0;

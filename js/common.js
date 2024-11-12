@@ -119,22 +119,21 @@ $(function () {
     const keywordsPics = gsap.utils.toArray(".keywords-pic figure");
 
     keywordsPics.forEach((pic, index) => {
-        gsap
-            .timeline({
-                scrollTrigger: {
-                    trigger: pic,
-                    // markers: true,
-                    start: "top 30%",
-                    end: "bottom 0%",
-                    scrub: 1,
-                    // pin: true,
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: pic,
+                // markers: true,
+                start: "top 30%",
+                end: "bottom 0%",
+                scrub: 1,
+                // pin: true,
 
-                    toggleClass: {
-                        targets: [keywords[index], keywordsCon[index]],
-                        className: "active",
-                    },
+                toggleClass: {
+                    targets: [keywords[index], keywordsCon[index]],
+                    className: "active",
                 },
-            })
+            },
+        })
             .from(pic, {
                 // autoAlpha: 0,
                 // y: 100,
@@ -144,7 +143,6 @@ $(function () {
                 height: "80%",
                 duration: 5,
             })
-            .to(".fake", { x: 100, duration: 20 }),
-            "+=2";
+            .to(".fake", { x: 100, duration: 20 });
     });
 });
