@@ -28,9 +28,9 @@ $(function () {
         scrollTrigger: {
             trigger: ".pick",
             // markers: true,
-            start: "top 0%",
+            start: "top 20%",
             end: "bottom 0%",
-            pin: true,
+            // pin: true,
             scrub: 1,
         },
     });
@@ -43,9 +43,9 @@ $(function () {
         scrollTrigger: {
             trigger: ".news",
             // markers: true,
-            start: "top 10%",
+            start: "top 20%",
             end: "bottom 0%",
-            pin: true,
+            // pin: true,
             // scrub: 1,
             // toggleActions: "play none reverse none",
         },
