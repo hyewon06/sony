@@ -109,7 +109,7 @@
 }
 
 main {
-    padding-top: 100vh;
+    margin-top: 100vh;
 }
 
 /* --비쥬얼 섹션-- */
@@ -144,7 +144,7 @@ main {
 }
 
 .scroll-con {
-    border: 10px solid #f00;
+    /* border: 10px solid #f00; */
 }
 
 .visual-title {
@@ -155,9 +155,9 @@ main {
 .visual-title h2 {
     font-size: 230px;
     font-family: "GT";
-    line-height: 1.2;
+    line-height: 1;
 
-    margin-top: -20px;
+    margin-top: 20px;
 }
 .visual-title p {
     font-weight: 600;
@@ -215,6 +215,7 @@ main {
 /* --스토리 섹션-- */
 .story {
     background: #fff;
+    /* border: 10px solid #f00; */
 }
 .story-con {
     background: #000;
@@ -310,10 +311,12 @@ main {
     width: 100vw;
     aspect-ratio: 16/9;
 }
+
 /* 픽 섹션 */
 .pick {
     padding: 230px 0;
     background: #fff;
+    /* height: 120vh; */
 }
 .pick-con {
     height: auto;
@@ -494,41 +497,41 @@ main {
 }
 
 .news-slider-wrap {
-    /* border: 1px solid #00f; */
     position: relative;
+    margin-top: 50px;
 }
 
 .news-slider-wrap .button-prev {
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     left: -55px;
     width: 50px;
     height: 50px;
-
     color: #fff;
     z-index: 5;
+    cursor: pointer;
 }
-.news-slider-wrap .button-prev .ri-arrow-left-s-line {
-    font-size: 50px;
-    color: var(--black40);
-}
-.news-slider-wrap .button-next .ri-arrow-right-s-line {
-    font-size: 50px;
-    color: var(--black40);
-}
+
 .news-slider-wrap .button-next {
     position: absolute;
     top: 50%;
     right: -55px;
     width: 50px;
     height: 50px;
-
     color: #fff;
     z-index: 5;
+    cursor: pointer;
 }
 
-.news-list {
-    margin: 50px 0;
+.news-slider-wrap .button-prev .ri-arrow-left-s-line,
+.news-slider-wrap .button-next .ri-arrow-right-s-line {
+    font-size: 50px;
+    color: var(--black40);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .list-info dl {
@@ -554,6 +557,9 @@ main {
 }
 .swiper-slide img {
     transition: 0.4s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .swiper-slide a > figure {
     overflow: hidden;
@@ -589,25 +595,26 @@ main {
 .list-con {
     display: flex;
     justify-content: space-between;
-
     margin-top: 50px;
 }
 
 /* 고객문의 섹션 */
 .service {
-    padding: 100px 0;
+    margin: 100px 0;
     background: #fff;
 }
-.service hr {
-    height: 2px;
-    background: var(--title-dark-color);
+
+.sercvice-con {
+    border-top: 4px solid var(--title-dark-color);
+    border-bottom: 4px solid var(--title-dark-color);
+    height: 20rem;
 }
 .sercvice-con a {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-
-    padding: 110px 0;
+    align-items: center;
 }
 .con-title h3 {
     font-weight: 700;
@@ -622,8 +629,6 @@ main {
 .sercvice-con .ri-arrow-right-line {
     font-weight: 700;
     font-size: 60px;
-
-    transition: 0.4s;
 }
 
 /* 슬라이드 되는 텍스트 */

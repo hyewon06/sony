@@ -30,6 +30,7 @@ a {
     color: inherit;
 }
 
+hr,
 .hidden {
     position: absolute;
     margin: -1px;

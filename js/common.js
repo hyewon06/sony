@@ -30,7 +30,7 @@ $(function () {
 
     const newsSlider = new Swiper(".news-slider", {
         loop: true,
-        autoplay: true,
+        // autoplay: true,
         slidesPerView: 4,
         spaceBetween: 40,
 
@@ -143,6 +143,6 @@ $(function () {
                 height: "80%",
                 duration: 5,
             })
-            .to(".fake", { x: 1, duration: 20 });
+            .to(".fake", { x: 100, duration: 20 });
     });
 });

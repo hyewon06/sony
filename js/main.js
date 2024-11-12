@@ -1,4 +1,5 @@
 $(function () {
+    gsap.registerPlugin(ScrollTrigger);
     const tl = gsap.timeline();
 
     //header
@@ -6,58 +7,61 @@ $(function () {
     tl.from(".gnb li > a", { y: -50, autoAlpha: 0, stagger: 0.1 }, ">");
     tl.from(".util-menu a", { y: -100, autoAlpha: 0, stagger: 0.2 }, ">");
 
+    gsap.to(".visual", {
+        scrollTrigger: {
+            trigger: ".scroll-con",
+            // markers: true,
+            start: "bottom 0%",
+            scrub: 1,
+        },
+
+        autoAlpha: 0,
+        duration: 1,
+    });
+
     //pick
-    const pickTL = gsap.timeline({
+    gsap.from(".pick-slider", {
+        autoAlpha: 0,
+        x: 50,
+        // duration: 2,
+
         scrollTrigger: {
             trigger: ".pick",
             // markers: true,
-            start: "top 10%",
+            start: "top 0%",
             end: "bottom 0%",
             pin: true,
-            scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
+            scrub: 1,
         },
     });
 
-    pickTL.from(".pick-slider-wrap", {
-        autoAlpha: 0,
-        x: 50,
-        stagger: 0.2,
-        duration: 2,
-    });
-
     //news
-    const newsTL = gsap.timeline({
+    gsap.from(".news-slider .swiper-slide", {
+        autoAlpha: 0,
+        y: 50,
+        stagger: 0.3,
         scrollTrigger: {
             trigger: ".news",
             // markers: true,
             start: "top 10%",
             end: "bottom 0%",
             pin: true,
-            anticipatePin: 1,
-            scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
+            // scrub: 1,
+            // toggleActions: "play none reverse none",
         },
-    });
-
-    newsTL.from(".swiper-wrapper a", {
-        autoAlpha: 0,
-        y: 50,
-        stagger: 0.25,
     });
 
     //service
-    const serviceTL = gsap.timeline({
+    gsap.from(".ri-arrow-right-line", {
+        autoAlpha: 0,
+        x: -50,
+
         scrollTrigger: {
             trigger: ".service",
             // markers: true,
-            start: "top 10%",
-            end: "bottom 0%",
-            // pin: true,
-            scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
+            start: "top 40%",
+            end: "top 0%",
+            toggleActions: "play none reverse none",
         },
-    });
-
-    serviceTL.from(".ri-arrow-right-line", {
-        autoAlpha: 0,
-        x: -50,
     });
 });
