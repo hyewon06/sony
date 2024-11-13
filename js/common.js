@@ -31,8 +31,21 @@ $(function () {
     const newsSlider = new Swiper(".news-slider", {
         loop: true,
         // autoplay: true,
-        slidesPerView: 4,
-        spaceBetween: 40,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            700: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1400: {
+                slidesPerView: 4,
+            },
+        },
 
         navigation: {
             nextEl: ".news-slider-wrap .button-next",
@@ -144,5 +157,24 @@ $(function () {
                 duration: 5,
             })
             .to(".fake", { x: 100, duration: 20 });
+    });
+
+    // 모바일 메뉴
+    $(".btn-menu").on("click", function (e) {
+        e.preventDefault();
+
+        if ($(window).innerWidth() >= 1200) {
+            return;
+        } else {
+            $(".mobile-menu").slideDown();
+        }
+    });
+
+    $(".btn-close").on("click", function () {
+        $(".mobile-menu").slideUp();
+    });
+
+    $(window).on("resize", function () {
+        $(".mobile-menu").slideUp();
     });
 });
