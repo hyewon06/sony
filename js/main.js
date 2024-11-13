@@ -51,17 +51,17 @@ $(function () {
         },
     });
 
-    //service
-    gsap.from(".ri-arrow-right-line", {
-        autoAlpha: 0,
-        x: -50,
+    // //service
+    // gsap.from(".ri-arrow-right-line", {
+    //     autoAlpha: 0,
+    //     x: -50,
 
-        scrollTrigger: {
-            trigger: ".service",
-            // markers: true,
-            start: "top 40%",
-            end: "top 0%",
-            toggleActions: "play none reverse none",
-        },
-    });
+    //     scrollTrigger: {
+    //         trigger: ".service",
+    //         // markers: true,
+    //         start: "top 40%",
+    //         end: "top 0%",
+    //         // toggleActions: "play none reverse none",
+    //     },
+    // });
 });
