@@ -31,7 +31,7 @@ $(function () {
             start: "top 20%",
             end: "bottom 0%",
             // pin: true,
-            scrub: 1,
+            // scrub: 1,
         },
     });
 
