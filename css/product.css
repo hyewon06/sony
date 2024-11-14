@@ -382,8 +382,8 @@ input:focus {
     margin-top: 6px;
 }
 .banner-con p {
-    font-weight: 700;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 20px;
 
     margin-top: 50px;
 }
@@ -443,4 +443,7 @@ input:focus {
 }
 .product-list li:hover figure img {
     transform: scale(1.1);
+}
+#footer {
+    margin-top: 250px;
 }

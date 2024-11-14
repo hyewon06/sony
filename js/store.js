@@ -17,7 +17,7 @@ $(function () {
             end: "bottom 30%",
             // pin: true,
 
-            scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
+            // scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
         },
     });
 
@@ -48,12 +48,12 @@ $(function () {
     const promotionTL = gsap.timeline({
         scrollTrigger: {
             trigger: ".promotion",
-            // markers: true,
-            start: "top 50%",
+            markers: true,
+            start: "top 70%",
             end: "bottom 0%",
             // pin: true,
 
-            scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
+            // scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
         },
     });
 
@@ -78,18 +78,18 @@ $(function () {
         autoAlpha: 0,
     });
 
-    const serviceTL = gsap.timeline({
+    const supportConTL = gsap.timeline({
         scrollTrigger: {
-            trigger: ".service",
+            trigger: ".support-con",
             // markers: true,
-            start: "top 50%",
+            start: "top 80%",
             end: "bottom 20%",
 
             scrub: 1, // 사용자의 스크로바를 따라잡기까지 1초
         },
     });
 
-    serviceTL.from(".service-list li ", {
+    supportConTL.from(".service-list", {
         y: 50,
         autoAlpha: 0,
         stagger: 0.25,
