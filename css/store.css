@@ -228,7 +228,7 @@
 
     padding: 23px 65px;
     border: 1px solid var(--black40);
-    border-radius: 12px;
+    border-radius: 120px;
     transition: 0.4s;
 }
 .more-btn .ri-add-line {

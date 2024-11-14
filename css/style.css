@@ -331,14 +331,14 @@ main {
 .pick-title h2 {
     font-weight: 700;
     font-size: 83px;
-    font-size: clamp(40px, 6vw, 83px);
+    font-size: clamp(40px, 5vw, 83px);
     color: var(--title-dark-color);
     line-height: 1;
 }
 .pick-title p {
     font-weight: 500;
     font-size: 28px;
-    font-size: clamp(18px, 3vw, 28px);
+    font-size: clamp(18px, 2.2vw, 28px);
     color: var(--black40);
     margin-top: 20px;
 }
@@ -487,7 +487,7 @@ main {
 .banner h4 {
     font-weight: 600;
     font-size: 36px;
-    font-size: clamp(30px, 4vw, 40px);
+    font-size: clamp(25px, 4vw, 40px);
     color: var(--title-color);
 }
 .banner p {
@@ -903,5 +903,9 @@ main {
     }
     .sercvice-con .ri-arrow-right-line {
         font-size: 30px;
+    }
+    .sercvice-con {
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
     }
 }

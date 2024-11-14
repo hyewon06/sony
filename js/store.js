@@ -81,7 +81,7 @@ $(function () {
     const serviceTL = gsap.timeline({
         scrollTrigger: {
             trigger: ".service",
-            markers: true,
+            // markers: true,
             start: "top 50%",
             end: "bottom 20%",
 
