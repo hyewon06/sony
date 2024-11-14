@@ -9,7 +9,7 @@ $(function () {
     const newsTL = gsap.timeline({
         scrollTrigger: {
             trigger: ".news",
-            markers: true,
+            // markers: true,
             start: "top 80%",
             end: "bottom 60%",
 

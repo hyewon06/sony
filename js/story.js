@@ -51,7 +51,7 @@ $(function () {
         {
             scrollTrigger: {
                 trigger: ".ceo-message",
-                markers: true,
+                // markers: true,
                 start: "top 40%",
                 end: "bottom 20%",
 
