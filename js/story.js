@@ -4,8 +4,6 @@ $(function () {
     //main
     tl.from(".header strong", { x: -100, autoAlpha: 0, duration: 1 });
     tl.from(".section-title", { x: -100, autoAlpha: 0, duration: 1 }, ">");
-    tl.from(".link  li", { y: -40, autoAlpha: 0, stagger: 0.25 }, "-=0.2");
-    tl.from(".list-con li", { y: -50, autoAlpha: 0, stagger: 0.15 }, ">");
 
     // tl.from(".vision-con h2", { autoAlpha: 0, duration: 1 });
     // tl.from(".vision-con figure", { x: -50, autoAlpha: 0, stagger: 0.15 }, "-=0.4");
