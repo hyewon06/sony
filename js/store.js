@@ -48,7 +48,7 @@ $(function () {
     const promotionTL = gsap.timeline({
         scrollTrigger: {
             trigger: ".promotion",
-            markers: true,
+            // markers: true,
             start: "top 70%",
             end: "bottom 0%",
             // pin: true,
